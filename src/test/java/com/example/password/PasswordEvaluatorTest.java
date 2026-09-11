@@ -3,18 +3,29 @@ package com.example.password;
 import com.example.password.model.PasswordAnalysis;
 import com.example.password.model.StrengthLevel;
 import com.example.password.service.PasswordEvaluator;
+
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.AfterEach;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PasswordEvaluatorTest {
 
+    //Setup
     private PasswordEvaluator evaluator;
 
     @BeforeEach
-    void setUp() {
+    void setup(){
         evaluator = new PasswordEvaluator();
+    }
+
+    @Test
+    void testEmptyString(){
+        PasswordAnalysis result = evaluator.evaluate("");
+        assertEquals(0, result.getScore());
     }
 
     @Test
