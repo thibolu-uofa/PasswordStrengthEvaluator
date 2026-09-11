@@ -3,4 +3,5 @@ This is not a real program, it doesn't really tell you how strong your password 
 
 The pom.xml contains the lines for the JaCoCO and PIT maven plugins that we will use in class.
 The test cases are in 
-PasswordStrengthEvaluator/blob/main/src/test/java/com/example/password/PasswordEvaluatorTest.java
+[PasswordStrengthEvaluator/blob/main/src/test/java/com/example/password/PasswordEvaluatorTest.java
+](https://github.com/thibolu-uofa/PasswordStrengthEvaluator/blob/main/src/test/java/com/example/password/PasswordEvaluatorTest.java)
